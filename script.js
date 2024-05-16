@@ -20,3 +20,9 @@ function abrirSubMenu() {
 };
 
 
+
+function tabClicked(){
+ 
+    
+    
+}
