@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoganTech RuneScape</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     
@@ -68,12 +67,13 @@
 <div class="content-3">
 
     <div class="tab-buttons">
-        <button class="tab-btn" content-id="noticias">Notícias</button>
-        <button class="tab-btn" content-id="local">Localizações</button>
+        <button class="tab-btn" id="noticias" onclick="tabClicked()">Notícias</button>
+        <button class="tab-btn" id="local" onclick="tabClicked()">Shopping do Salomão</button>
+        <div class="triangleTabBtn" onclick="minimizarJanela()"></div>
     </div>
 
-    <div class="tab-contents">
-        <div class="content-tab home" id="noticias">
+    <div class="tab-contents" id="infos">
+        <div class="content-tab" id="noticias">
 
             <div class="infos">
                 
@@ -142,13 +142,56 @@
 
         </div>
 
-        <div class="content-tab" id="local">
+        <div class="content-tab-two" id="local">
 
             <div class="infos">
-
-                <p class="contentDescricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, quis eos. Tempora cumque, repellendus molestiae fuga fugiat accusamus harum ipsa consectetur rerum distinctio? Quod incidunt, ipsum est quibusdam non ducimus?</p>
+                
+                <a  href="#"><img src="Imagens/Content-3/RS21_WMHD-News_Thumbnail_169x88px.jpg" class="imgContent-3N1"></a>
+                <h2 class="contentDescricao"><a  href="#">Dia Mundial da Saúde Mental: Pacote do Bem-estar – Estendido!<div class="triangle-btn"></div></a></h2>
+                <p class="contentAtt"><a  href="#">Loja do Salomão</a> | 14 Maio 2024</p>
+                <p class="pacoteShop">Estendemos a disponibilidade do Pacote do Bem-estar. <a href="" class="pacoteLink">Read More</a></p>
 
             </div>
+
+            <div class="infos">
+                
+                <a  href="#"><img src="Imagens/Content-3/RS-One-Special-Day-News-Thumb.jpg" class="imgContent-3N1"></a>
+                <h2 class="contentDescricao"><a  href="#">Promoção One Special Day.<div class="triangle-btn"></div></a></h2>
+                <p class="contentAtt"><a  href="#">Loja do Salomão</a> | 13 Maio 2024</p>
+                <p class="pacoteShop">Não perca o nosso pacote beneficente! <a href="" class="pacoteLink">Read More</a></p>
+
+            </div>
+
+            <div class="infos">
+                
+                <a  href="#"><img src="Imagens/Content-3/fallback-solomons.jpg" class="imgContent-3N1"></a>
+                <h2 class="contentDescricao"><a  href="#">One Special Day da SpecialEffect: como receber sua capa e balão comemorativos.<div class="triangle-btn"></div></a></h2>
+                <p class="contentAtt"><a  href="#">Loja do Salomão</a> | 08 Maio 2024</p>
+                <p class="pacoteShop">Não perca o nosso pacote beneficente! <a href="" class="pacoteLink">Read More</a></p>
+
+            </div>
+
+            <div class="infos">
+                
+                <a  href="#"><img src="Imagens/Content-3/news_thumbnail_template.jpg" class="imgContent-3N1"></a>
+                <h2 class="contentDescricao"><a  href="#">Os Decadentes estão de volta!<div class="triangle-btn"></div></a></h2>
+                <p class="contentAtt"><a  href="#">Loja do Salomão</a> | 07 Maio 2024</p>
+                <p class="pacoteShop">Esta nova e horripilante roupa está disponível agora no Shopping do Salomão. <a href="" class="pacoteLink">Read More</a></p>
+
+            </div>
+
+            <div class="infos">
+                
+                <a  href="#"><img src="Imagens/Content-3/RS3-SGS_Design_Comp_Winner_News_Thumbnail.jpg" class="imgContent-3N1"></a>
+                <h2 class="contentDescricao"><a  href="#">Vencedores da Competição do Salomão.<div class="triangle-btn"></div></a></h2>
+                <p class="contentAtt"><a  href="#">Loja do Salomão</a> | 29 Abril 2024</p>
+                <p class="pacoteShop">Os vencedores da Competição do Salomão estão chegando na próxima semana! Continue lendo para saber mais! <a href="" class="pacoteLink">Read More</a></p>
+
+            </div>
+
+          
+
+            
 
         </div>
     </div>
@@ -242,6 +285,6 @@
 
 
 
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
