@@ -341,6 +341,18 @@ body{
         margin-top: 6px;
 }
 
+.triangleTabBtn.btn{
+
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent; 
+    border-top: 15px solid #b4a801;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 100px;
+    float: right;
+    
+}
+
 .tab-buttons{
     background-color: rgb(121, 128, 128);
     border: 1px solid;
@@ -353,6 +365,8 @@ body{
     cursor: pointer;
 
 }
+
+
 
 .tab-btn:hover{
     background-color: #383838;

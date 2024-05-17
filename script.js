@@ -52,24 +52,37 @@ function tabClicked(){
 }
 
 function minimizarJanela() {
+
+
+    let btnClassContent = document.querySelector('.triangleTabBtn');
+    console.log(btnClassContent);
     let classContent = document.querySelector('.tab-contents');
     let computedStyle = window.getComputedStyle(classContent);
-    console.log(computedStyle.display);
-    
 
     if (computedStyle.display === 'block') {
+        
+        let alturaAtual = classContent.scrollHeight + 'px';
+
+        classContent.style.height = alturaAtual;
+        void classContent.offsetHeight;
+
         classContent.style.transition = 'height 0.5s ease'; 
         classContent.style.height = '0'; 
         classContent.style.overflow = 'hidden'; 
         setTimeout(() => {
             classContent.style.display = 'none'; 
+            btnClassContent.classList.remove('btn');
         }, 500); 
     } else {
         classContent.style.display = 'block'; 
+        void classContent.offsetHeight;
+        btnClassContent.classList.add('btn');
+        let novaAltura = classContent.scrollHeight + 'px';
         classContent.style.transition = 'height 1.5s ease'; 
-        classContent.style.height = classContent.scrollHeight + 'px'; 
+        classContent.style.height = novaAltura; 
     }
 }
+
 
     
 
